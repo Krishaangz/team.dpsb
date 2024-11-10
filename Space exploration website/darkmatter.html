@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Matter Discoveries | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .back-btn {
+            font-size: 1rem;
+            color: #F6FF4C;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #EB1214;
+        }
+
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #F6FF4C, #EB1214);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(246, 255, 76, 0.7), 0 0 20px rgba(235, 18, 20, 0.7);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(246, 255, 76, 0.859);
+        }
+
+        .galaxy-image {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+        .galaxy-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(246, 255, 76, 0.8), 0 0 25px rgba(235, 18, 20, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="new-discoveries.html" class="back-btn font-bold transition duration-300"> ← </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Dark Matter Discoveries</h1>
+
+        <p class="text-center text-lg mb-10">
+            Dark matter remains one of the biggest mysteries in astrophysics and cosmology. While it has never been directly detected, its existence is inferred through its gravitational effects on visible matter, radiation, and the large-scale structure of the universe. Below are the key methods and discoveries related to dark matter:
+        </p>
+
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Types of Dark Matter Discoveries</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Direct Detection</h3>
+                    <p>Dark matter has yet to be directly detected, but experiments are underway to find its elusive particles. The most common candidates, WIMPs (Weakly Interacting Massive Particles) and axions, are being sought in underground labs using sensitive detectors like those in XENON1T and LUX-ZEPLIN. Despite extensive searches, dark matter remains invisible, but its presence is inferred from its gravitational effects.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Gravitational Lensing</h3>
+                    <p>Dark matter’s presence is evident in gravitational lensing, where massive objects (like galaxy clusters) bend light from distant sources. The gravitational distortion reveals the mass distribution in galaxy clusters, showing that a large portion of mass is invisible. Weak lensing and strong lensing allow scientists to map dark matter, helping to outline dark matter halos around galaxies and clusters.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Cosmic Microwave Background</h3>
+                    <p>The CMB is the faint radiation left over from the Big Bang and provides insight into the early universe. Analyzing the CMB’s temperature fluctuations reveals the composition of the universe, supporting the presence of dark matter. Data from Planck and WMAP have confirmed that dark matter played a crucial role in the formation of galaxies and large-scale structures, influencing the universe’s evolution.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Galaxy Rotation Curves</h3>
+                    <p>One of the first clues to dark matter came from the study of galaxy rotation curves. Observations showed that stars in the outer regions of galaxies move faster than expected based on visible matter. This discrepancy suggests the presence of dark matter halos that provide additional gravitational pull, preventing galaxies from flying apart. The flatness of the rotation curves is a key piece of evidence for dark matter.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Bullet Cluster</h3>
+                    <p>The Bullet Cluster provides strong evidence for dark matter through a collision of two galaxy clusters. X-ray observations show the hot gas from the collision, while gravitational lensing reveals a separate distribution of mass—indicating dark matter. The separation of visible matter (gas) and dark matter during the collision reinforces the idea that dark matter interacts only gravitationally, unlike normal matter, which interacts electromagnetically.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Simulations and Models</h3>
+                    <p>Computer simulations based on the ΛCDM model (Lambda Cold Dark Matter) are essential for understanding dark matter’s role in the universe. These simulations predict the formation of cosmic structures, such as galaxies and clusters, under the influence of dark matter. Simulations have been successful in replicating the observed large-scale structure of the universe, and they suggest that dark matter is crucial for the formation of galaxies and the evolution of the cosmos.
+
+</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Visuals of Dark Matter Discoveries</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div>
+                    <img src="assets/images/darkmatter/dm.png" alt="Dark Matter Detection" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Dark Matter Detection Experiment</p>
+                </div>
+
+                <div>
+                    <img src="assets/images/darkmatter/dm (1).png" alt="Gravitational Lensing" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Gravitational Lensing Evidence</p>
+                </div>
+
+                <div>
+                    <img src="assets/images/darkmatter/dm (2).png" alt="Cosmic Microwave Background" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Cosmic Microwave Background Analysis</p>
+                </div>
+
+                <div>
+                    <img src="assets/images/darkmatter/dm (3).png" alt="Galaxy Rotation Curves" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Galaxy Rotation Curves</p>
+                </div>
+
+                <div>
+                    <img src="assets/images/darkmatter/dm (4).png" alt="Bullet Cluster" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">The Bullet Cluster</p>
+                </div>
+
+                <div>
+                    <img src="assets/images/darkmatter/dm (5).png" alt="Simulations of Dark Matter" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Simulations of Dark Matter Effects</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

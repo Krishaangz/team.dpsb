@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comets | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .back-btn {
+            font-size: 1rem;
+            color: #08FF6D;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #EB12C9;
+        }
+
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #08FF6D, #EB12C9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(8, 255, 109, 0.7), 0 0 20px rgba(235, 18, 201, 0.7);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(8, 255, 109, 0.8);
+        }
+
+        .galaxy-image {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+        .galaxy-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(8, 255, 109, 0.8), 0 0 25px rgba(235, 18, 201, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="../spacipedia.html" class="back-btn font-bold transition duration-300"> ← </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Comets</h1>
+
+        <p class="text-center text-lg mb-10">
+            Comets are icy bodies that travel through the solar system, displaying bright tails of gas and dust when they approach the Sun. Their paths can span millions of kilometers, and their study helps us understand the early solar system.
+        </p>
+
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #08FF6D, #EB12C9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Categories of Comets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Short-Period Comets</h3>
+                    <p>
+                    Short-period comets have orbits that take less than 200 years to complete. Originating in the Kuiper Belt or scattered disk, these comets often follow elliptical paths around the Sun. Their predictable trajectories allow for frequent observation. Short-period comets provide valuable insights into the solar system's outer regions and icy bodies.
+                     </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Long-Period Comets</h3>
+                    <p>
+                    Long-period comets have orbits that take more than 200 years to complete, often originating from the Oort Cloud. These comets travel through distant regions of the solar system, displaying highly elliptical orbits. Their unpredictable appearances offer valuable data on the outer solar system and the dynamics of icy bodies.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Halley-Type Comets</h3>
+                    <p>
+                    Halley-type comets are short-period comets with orbits lasting between 20 and 200 years. They share similar characteristics to Halley's Comet, with elliptical orbits that bring them close to the Sun. These comets often originate from the Kuiper Belt, and their predictable paths provide insights into the solar system's outer regions.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Oort Cloud Comets</h3>
+                    <p>
+                    Oort Cloud comets originate from the distant, spherical Oort Cloud, a region beyond the Kuiper Belt. These comets have highly elliptical orbits that can take thousands to millions of years to complete. When they approach the Sun, they develop bright comas and tails, offering insights into the solar system's formation.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Centaurs</h3>
+                    <p>
+                    Centaurs are icy objects that exhibit characteristics of both asteroids and comets, orbiting between Jupiter and Neptune. Often unstable, their orbits can shift, sometimes leading to comet-like behavior with tails. Centaur comets provide valuable insights into the transition zone between the gas giants and the icy bodies of the outer solar system.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">RARE Comets</h3>
+                    <p>
+                    Rare comets are exceptional, often appearing only once in human history due to their highly elliptical orbits. These comets can originate from the Oort Cloud or distant regions of the solar system, offering unique opportunities for scientific study. Their infrequent visits provide insights into the solar system’s outer, uncharted areas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #08FF6D, #EB12C9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Visuals of Comets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div>
+                    <img src="assets/images/comets/comets.png" alt="Short-Period Comet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Short-Period Comet</p>
+                </div>
+                
+                <div>
+                    <img src="assets/images/comets/comets (1).png" alt="Long-Period Comet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Long-Period Comet</p>
+                </div>
+                
+                <div>
+                    <img src="assets/images/comets/comets (2).png" alt="Halley-Type Comet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Halley-Type Comet</p>
+                </div>
+                
+                <div>
+                    <img src="assets/images/comets/comets (3).png" alt="Oort Cloud Comet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Oort Cloud Comet</p>
+                </div>
+                
+                <div>
+                    <img src="assets/images/comets/comets (4).png" alt="Centaurs Comet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Centaurs Comet</p>
+                </div>
+                
+                <div>
+                    <img src="assets/images/comets/comets (5).png" alt="RARE Comet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">RARE Comet</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

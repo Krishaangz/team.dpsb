@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .back-btn {
+            font-size: 1rem;
+            color: #F6FF4C;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #EB1214;
+        }
+
+        
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #F6FF4C, #EB1214);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(246, 255, 76, 0.7), 0 0 20px rgba(235, 18, 20, 0.7);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 20px;
+            height: 100%;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(246, 255, 76, 0.859);
+        }
+
+        
+        .time-travel-image {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+        .time-travel-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(246, 255, 76, 0.8), 0 0 25px rgba(235, 18, 20, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="new-discoveries.html" class="back-btn font-bold transition duration-300">←</a>
+        </div>
+    </nav>
+
+    
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Time Travel</h1>
+
+        <p class="text-center text-lg mb-10">
+            Time travel is a fascinating concept that has long captured the human imagination, both in science fiction and in theoretical physics. Various theories and phenomena have been proposed that could, in theory, allow for time travel or time manipulation, although much of it remains speculative and unproven. Here’s an overview of some of the key concepts related to time travel:
+        </p>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Types of Time Travel</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Wormholes</h3>
+                    <p>Wormholes are theoretical structures in spacetime that create shortcuts or "bridges" between distant points in the universe. They are often described as tunnels with two ends, each located in different regions of spacetime. According to Einstein’s theory of general relativity, wormholes could, in theory, connect distant parts of space and time, potentially allowing for faster-than-light travel or even time travel. However, creating or maintaining a stable wormhole is a major challenge. These structures would likely require "exotic matter" with negative energy density to keep them open, something that has not yet been observed in nature.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Time Dilation</h3>
+                    <p>Time dilation is a phenomenon predicted by Albert Einstein’s theory of relativity. It refers to the difference in the passage of time for two observers who are moving relative to each other, or who are in different gravitational fields.Time dilation doesn’t allow for traditional "time travel" in the sense of moving backward or forward through time at will, but it does show that time can move at different rates depending on speed and gravity, which is a form of "relative time travel."</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Time Machines</h3>
+                    <p>A time machine, in popular science fiction, is a device that allows a person to travel through time—either forward into the future or backward into the past. While time travel to the future is theoretically possible based on time dilation effects, traveling to the past presents far more problems. According to our current understanding of physics, no known mechanism or device exists that would allow for backward time travel</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Gravitational Waves</h3>
+                    <p>Gravitational waves are ripples in spacetime caused by the acceleration of massive objects, such as the collision of black holes or neutron stars. Predicted by Einstein's theory of general relativity, gravitational waves were first directly detected in 2015 by the LIGO (Laser Interferometer Gravitational-Wave Observatory) experiment. While they are not directly related to time travel, gravitational waves offer a deeper understanding of the fabric of spacetime and could potentially reveal more about how time and space are interconnected.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Cosmic Strings</h3>
+                    <p>Cosmic strings are hypothetical one-dimensional topological defects in spacetime that may have formed in the early universe, shortly after the Big Bang. These "strings" are thought to be incredibly dense and could stretch across vast distances, potentially influencing the fabric of spacetime in dramatic ways. Some theories suggest that if cosmic strings exist, they might be able to bend spacetime in such a way that time loops or closed timelike curves could form.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Closed Timelike Curves</h3>
+                    <p>Closed timelike curves (CTCs) are solutions to the equations of general relativity that describe paths in spacetime that loop back on themselves. In simpler terms, a closed timelike curve would allow an object to travel back in time to the point where it started its journey. These curves are a key theoretical component in discussions of time travel.
+
+CTCs can appear in certain theoretical constructs, such as inside rotating black holes (Kerr black holes) or through wormholes. The classic example of a CTC is the so-called "grandfather paradox," where a person could travel back in time and change events, like preventing their own grandfather from meeting their grandmother, which would prevent the person from ever being born. This creates logical inconsistencies in time, leading to paradoxes that challenge the very notion of backward time travel.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Visuals of Time Travel</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                
+                <div>
+                    <img src="assets/images/time-travel/tt.png" alt="Concept of Time Travel" class="w-full h-auto time-travel-image">
+                    <p class="text-center mt-2">Concept of Time Travel</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/time-travel/tt (1).png" alt="Time Travel Theories" class="w-full h-auto time-travel-image">
+                    <p class="text-center mt-2">Time Travel Theories</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/time-travel/tt (2).png" alt="Recent Discoveries in Time Travel" class="w-full h-auto time-travel-image">
+                    <p class="text-center mt-2">Recent Discoveries in Time Travel</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/time-travel/tt (3).png" alt="Wormholes" class="w-full h-auto time-travel-image">
+                    <p class="text-center mt-2">Wormholes</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/time-travel/tt (4).png" alt="Time Dilation" class="w-full h-auto time-travel-image">
+                    <p class="text-center mt-2">Time Dilation</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/time-travel/tt (5).png" alt="Cosmic Strings" class="w-full h-auto time-travel-image">
+                    <p class="text-center mt-2">Cosmic Strings</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

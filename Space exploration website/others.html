@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Others | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+
+        
+        .back-btn {
+            font-size: 1rem;
+            color: #F6FF4C;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #EB1214;
+        }
+
+        
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #F6FF4C, #EB1214);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(246, 255, 76, 0.7), 0 0 20px rgba(235, 18, 20, 0.7);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 20px;
+            height: 100%;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(246, 255, 76, 0.859);
+        }
+
+       
+        .cosmos-image {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+        .cosmos-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(246, 255, 76, 0.8), 0 0 25px rgba(235, 18, 20, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="new-discoveries.html" class="back-btn font-bold transition duration-300">←</a>
+        </div>
+    </nav>
+
+   
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Other Discoveries in the Cosmos</h1>
+
+        <p class="text-center text-lg mb-10">
+            Here’s a brief overview of the important discoveries and topics related to the cosmos, touching on astrobiology, quantum mechanics, the James Webb Space Telescope, pulsar astronomy, space debris, and exoplanets:
+        </p>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Key Theories and Discoveries</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Astrobiology</h3>
+                    <p>Astrobiology explores the possibility of life beyond Earth. Scientists study extreme environments on Earth, such as deep-sea vents and acidic lakes, to understand how life might survive on other planets or moons. The discovery of extremophiles—organisms that thrive in extreme conditions—has broadened our understanding of where life could potentially exist in the universe, such as on Mars, Europa (Jupiter's moon), and Enceladus (Saturn’s moon). Upcoming missions, like the Mars Sample Return, aim to search for biosignatures of past life on Mars.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Quantum Mechanics</h3>
+                    <p>Quantum mechanics, the branch of physics dealing with the smallest scales of energy and matter, has profound implications for cosmology. Quantum fluctuations are thought to have played a critical role in the Big Bang and the early expansion of the universe. Concepts like quantum entanglement and superposition challenge classical ideas of space and time, and quantum theories of gravity might eventually lead to a unified theory that bridges general relativity and quantum mechanics, potentially explaining phenomena like black holes and the behavior of the universe at its origins.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">James Webb Space Telescope (JWST) Discoveries</h3>
+                    <p>The James Webb Space Telescope, launched in December 2021, represents a leap forward in astronomical observation. Positioned at the second Lagrange point (L2), JWST is designed to observe the universe in the infrared spectrum, allowing it to peer through cosmic dust clouds and observe distant galaxies, stars, and exoplanets. It has already provided stunning images of deep space, revealing the most distant galaxies ever seen and offering new insights into star formation, black hole dynamics, and the atmospheres of exoplanets. JWST is also crucial for understanding the origins of the universe and searching for potential signs of life.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Pulsar Astronomy</h3>
+                    <p>Pulsars are rapidly rotating neutron stars that emit beams of radiation, detected as regular pulses. Discovered in 1967, pulsars are important for understanding the extremes of matter and gravity. Their regular pulses have been used as cosmic clocks for testing general relativity. Pulsar timing arrays are also being used to detect gravitational waves from supermassive black hole mergers. Pulsars provide insights into the structure of neutron stars, the behavior of matter in strong magnetic fields, and the detection of cosmic gravitational waves</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Space Debris and Mitigation</h3>
+                    <p>Space debris refers to defunct satellites, spent rocket stages, and fragments from collisions, posing a growing risk to operational spacecraft and satellites. The Kessler Syndrome suggests that the accumulation of debris could create a self-perpetuating cloud of space junk. Various initiatives and technologies, like active debris removal (ADR) and space tugs, are being developed to address the problem. International efforts, such as guidelines by the United Nations Office for Outer Space Affairs (UNOOSA), aim to reduce the creation of debris and promote the safe use of Earth's orbital environment.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Exoplanets</h3>
+                    <p>Exoplanets—planets orbiting stars outside our solar system—have been a major focus of modern astronomy. The Kepler Space Telescope revolutionized exoplanet discovery, identifying thousands of candidate planets, some in the habitable zone where conditions might allow liquid water to exist. Recent missions, including TESS (Transiting Exoplanet Survey Satellite), continue to identify potentially habitable exoplanets. The discovery of Earth-like planets in nearby star systems fuels speculation about the possibility of life beyond Earth and informs our search for habitable environments in the galaxy.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Visuals of Cosmic Discoveries</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                
+                <div>
+                    <img src="assets/images/others/astrobiology.png" alt="Astrobiology" class="w-full h-auto cosmos-image">
+                    <p class="text-center mt-2">Astrobiology</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/others/quantum-mechanics.png" alt="Quantum Mechanics" class="w-full h-auto cosmos-image">
+                    <p class="text-center mt-2">Quantum Mechanics</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/others/others.png" alt="James Webb Space Telescope Discoveries" class="w-full h-auto cosmos-image">
+                    <p class="text-center mt-2">JWST Discoveries</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/others/others (1).png" alt="Pulsar Astronomy" class="w-full h-auto cosmos-image">
+                    <p class="text-center mt-2">Pulsar Astronomy</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/others/others (2).png" alt="Space Debris and Mitigation" class="w-full h-auto cosmos-image">
+                    <p class="text-center mt-2">Space Debris</p>
+                </div>
+
+                
+                <div>
+                    <img src="assets/images/others/others (3).png" alt="Exoplanets" class="w-full h-auto cosmos-image">
+                    <p class="text-center mt-2">Exoplanets</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

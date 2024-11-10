@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxies | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+
+        
+        .back-btn {
+            font-size: 1rem;
+            color: #F6FF4C;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #EB1214;
+        }
+
+        
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #F6FF4C, #EB1214);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(246, 255, 76, 0.7), 0 0 20px rgba(235, 18, 20, 0.7);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(246, 255, 76, 0.859);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="../new-discoveries.html" class="back-btn font-bold transition duration-300"> ← </a>
+        </div>
+    </nav>
+
+    
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Galaxies</h1>
+
+        <p class="text-center text-lg mb-10">
+            Galaxies are vast systems of stars, planets, gas, dust, and dark matter, held together by gravity. Each galaxy is unique in structure, size, and content, contributing to the mesmerizing variety of cosmic landscapes we observe.
+        </p>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Categories of Galaxies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Spiral Galaxies</h3>
+                    <p>Spiral galaxies are one of the most recognizable types of galaxies, characterized by their distinct spiral arms that extend outward from a central bulge. These arms are often rich in young stars, gas, and dust, while the central bulge typically contains older stars. Our Milky Way is a classic example of a spiral galaxy. Spiral galaxies often have a well-defined disk structure and are rich in star formation, with a visible spiral pattern created by the rotation of stars and interstellar material.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Elliptical Galaxies</h3>
+                    <p>Elliptical galaxies are shaped like ellipsoids and lack the prominent structure seen in spiral galaxies. They are generally composed of older stars, with little interstellar gas or dust, and exhibit little or no ongoing star formation. Elliptical galaxies can vary greatly in size, from small dwarfs to massive giants, and they typically have smooth, featureless light distributions. These galaxies are often found in galaxy clusters and are thought to form through the merging of smaller galaxies.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Irregular Galaxies</h3>
+                    <p>Irregular galaxies do not have a regular, defined shape like spiral or elliptical galaxies. They often appear chaotic and asymmetric, with no clear structure. These galaxies can be rich in gas and dust, and they frequently have regions of active star formation. The lack of a distinct shape is often due to gravitational interactions or collisions with other galaxies. Irregular galaxies are diverse in appearance and include well-known examples like the Large Magellanic Cloud, a satellite galaxy of the Milky Way.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Lenticular Galaxies</h3>
+                    <p>Lenticular galaxies are intermediate between spiral and elliptical galaxies. They have a disk-like structure but lack the prominent spiral arms seen in spiral galaxies. The central bulge is usually large, and the disk contains mostly older stars with minimal gas or dust. Lenticular galaxies are often found in dense galaxy clusters and may have evolved from spiral galaxies that lost their interstellar gas, halting star formation. These galaxies are often characterized by a smooth, flat appearance without the ongoing star formation seen in spiral galaxies.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Ultra-Diffuse Galaxies</h3>
+                    <p>Ultra-diffuse galaxies (UDGs) are an enigmatic class of galaxy that appear very diffuse and faint, with low surface brightness and a lack of central concentration. Despite their large size, UDGs contain fewer stars and exhibit low star formation activity. Their exact formation mechanisms are still debated, but UDGs are thought to be the result of either the stripping of stars during interactions with larger galaxies or the result of dark matter-dominated environments that inhibit star formation. They challenge our understanding of galaxy formation and evolution.</p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #F6FF4C;">Dwarf Galaxies</h3>
+                    <p>Dwarf galaxies are small galaxies that typically contain fewer stars than larger galaxies like the Milky Way. Despite their small size, they are quite common in the universe and can be classified into different types, such as dwarf ellipticals, dwarf irregulars, and dwarf spheroidals. These galaxies often contain very little gas and dust, with little to no star formation. Dwarf galaxies are often satellites of larger galaxies, and they can provide valuable insights into the early stages of galaxy formation. Their low mass and star formation rate make them important for studying dark matter and galaxy evolution.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Recent Discoveries</h2>
+            
+            <p>
+            Galaxy Mergers 🌀
+            Astronomers have observed galaxy mergers on an immense scale, where galaxies collide and fuse, creating entirely new structures. These cosmic events offer a unique look at the long-term evolution of galaxies over billions of years. 🌠
+            </p>
+            <br>
+            <p>
+            Distant, Early Galaxies 🌟
+            New observations, particularly from the James Webb Space Telescope (JWST), have identified massive galaxies that formed only a few hundred million years after the Big Bang. These discoveries challenge previous theories about the timeline and formation of galaxies in the early universe. 🕰️    
+            </p>
+            <br>
+            <p>
+            Dark Galaxies 🌑
+            Scientists have uncovered "dark galaxies", which are made almost entirely of dark matter and gas, with few or no visible stars. These mysterious galaxies could offer clues about the elusive nature of dark matter, which accounts for around 85% of the universe's mass but remains invisible. 🔭
+            </p>
+            <br>
+            <p>
+            Cosmic Evolution 🌍
+            These discoveries are transforming our understanding of how galaxies evolve, merge, and interact, revealing deeper insights into the forces that shape the universe over time. 🚀
+            </p>
+        <style>
+            
+            .galaxy-image {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border-radius: 10px;
+            }
+        
+            .galaxy-image:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 15px rgba(246, 255, 76, 0.8), 0 0 25px rgba(235, 18, 20, 0.7);
+            }
+        </style>
+        
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #F6FF4C, #EB1214); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Visuals of Galaxies</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                
+                <div>
+                    <img src="assets/images/galaxies/spiral-galaxy.jpg" alt="Spiral Galaxy" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Spiral Galaxy</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/galaxies/elliptical-galaxy.jpg" alt="Elliptical Galaxy" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Elliptical Galaxy</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/galaxies/irregular-galaxy.jpg" alt="Irregular Galaxy" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Irregular Galaxy</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/galaxies/lenticular-galaxy.jpg" alt="Lenticular Galaxy" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Lenticular Galaxy</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/galaxies/ultra-diffuse-galaxy.jpg" alt="Ultra-Diffuse Galaxy" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Ultra-Diffuse Galaxy</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/galaxies/dwarf-galaxy.jpg" alt="Dwarf Galaxy" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Dwarf Galaxy</p>
+                </div>
+        
+            </div>
+        </section>        
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

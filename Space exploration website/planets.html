@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+
+        
+        .back-btn {
+            font-size: 1rem;
+            color: #08FF6D;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #EB12C9;
+        }
+
+        
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #08FF6D, #EB12C9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(8, 255, 109, 0.7), 0 0 20px rgba(235, 18, 201, 0.7);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(8, 255, 109, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="../spacipedia.html" class="back-btn font-bold transition duration-300"> ← </a>
+        </div>
+    </nav>
+
+    
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Planets</h1>
+
+        <p class="text-center text-lg mb-10">
+            Planets are diverse celestial bodies orbiting stars, each unique in composition, structure, and environmental conditions. From rocky planets to gas giants, the variety in planetary types across the universe enriches our understanding of cosmic diversity.
+        </p>
+
+        
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #08FF6D, #EB12C9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Categories of Planets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Rocky Planets</h3>
+                    <p>
+                    Rocky planets, also known as terrestrial planets, are composed primarily of silicate rocks and metals. They have solid surfaces and include Mercury, Venus, Earth, and Mars in our solar system. These planets typically have a dense core, a thin atmosphere, and are characterized by geological activity like volcanism and tectonics.
+                    </p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Rogue Planets</h3>
+                    <p>
+                    Rogue planets are planetary bodies that do not orbit a star, instead drifting through interstellar space. These planets may have formed around a star before being ejected, or they could have never had a star. They are typically cold, dark, and difficult to detect, making their study challenging.
+                    </p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Gas Giants</h3>
+                    <p>
+                    Gas giants are large planets primarily composed of hydrogen and helium, with no solid surface. In our solar system, Jupiter and Saturn are the best-known examples. They have thick atmospheres, strong magnetic fields, and many moons. Their immense size and gaseous composition distinguish them from rocky planets.
+                    </p> 
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Dwarf Planets</h3>
+                    <p>
+                    Dwarf planets are celestial bodies that orbit the Sun but lack the gravitational dominance to clear their orbital paths. Unlike regular planets, they are smaller and often irregularly shaped. Examples include Pluto, Eris, and Haumea. Dwarf planets reside mainly in the Kuiper Belt and other distant regions of the solar system.
+                    </p>
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Ice Giants</h3>
+                    <p>
+                    Ice giants, like Uranus and Neptune, are a subclass of gas giants composed mainly of water, ammonia, and methane ices, along with hydrogen and helium. These planets have icy, thick atmospheres and dense cores. Their extreme distances from the Sun contribute to their cold temperatures and unique blue appearance.
+                    </p>   
+                </div>
+
+                
+                <div class="info-card">
+                    <h3 class="text-xl font-bold mb-2" style="color: #08FF6D;">Planets of Our Solar System</h3>
+                    <p>Discover the planets that make up our own solar system, from Mercury to Neptune.</p>
+                    <a href="ssp.html" class="text-blue-400 underline">Learn More &raquo;</a>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold mb-6" style="background: linear-gradient(90deg, #08FF6D, #EB12C9); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Visuals of Planets</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                
+                <div>
+                    <img src="assets/images/planets/planets.png" alt="Rocky Planet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Rocky Planet</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/planets/planets (1).png" alt="Rogue Planet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Rogue Planet</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/planets/planets (2).png" alt="Gas Giant" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Gas Giant</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/planets/planets (3).png" alt="Dwarf Planet" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Dwarf Planet</p>
+                </div>
+                
+               
+                <div>
+                    <img src="assets/images/planets/planets (4).png" alt="Ice Giant" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Ice Giant</p>
+                </div>
+                
+                
+                <div>
+                    <img src="assets/images/planets/planets (5).png" alt="Planets of Solar System" class="w-full h-auto galaxy-image">
+                    <p class="text-center mt-2">Planets of Solar System</p>
+                </div>
+        
+            </div>
+        </section>
+
+        
+        <style>
+            
+            .galaxy-image {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border-radius: 10px;
+            }
+        
+            .galaxy-image:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 15px rgba(8, 255, 109, 0.8), 0 0 25px rgba(235, 18, 201, 0.7);
+            }
+        </style>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

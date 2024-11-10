@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Exploration | SpaceByte</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+        .back-btn {
+            font-size: 1rem;
+            color: #ff0099;
+            transition: color 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #9900ff;
+        }
+        .animated-heading {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #ff99cc, #660066);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: float 3s ease-in-out infinite, flicker 2s infinite;
+            text-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(128, 0, 128, 0.7);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        .info-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #e0e0e0;
+            padding: 15px;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(25, 207, 220, 0.859);
+        }
+        .moon-image {
+            border-radius: 8px;
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+        .moon-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-start">
+            <a href="../space-tourism.html" class="back-btn font-bold transition duration-300"> ← </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="animated-heading text-center mb-8">Moon Exploration</h1>
+
+        <p class="text-center text-lg mb-10">
+            The moon, Earth's closest neighbor, is not just a celestial body but a canvas for future exploration and discovery. As humanity looks to the stars, moon exploration holds the key to unlocking secrets about our solar system, from its geology and resources to the possibility of establishing lunar bases. Envision a world where lunar tourism becomes a reality, offering unique experiences that redefine the boundaries of space travel and human adventure.
+        </p>
+        <br>
+        <p>
+        Lunar exploration advances with manned Lunar Landings, paving the way for permanent Lunar Habitats. Astronauts conduct Spacewalks to study the surface, while Lunar Rover Tours offer detailed exploration. Scientific research through Lunar Science Experiments uncovers vital data, and Night Sky Observation from the Moon provides unparalleled views of Earth and beyond.
+        </p>
+
+        <section class="mb-12">
+            <h2 class="text-center text-2xl font-semibold text-purple-500 mb-6">Potential Features of Moon Exploration</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold text-pink-400 mb-2">Lunar Landings</h3>
+                    <p>
+                     Lunar landings represent humanity's return to the Moon after the Apollo missions. Modern landings, such as those planned by NASA’s Artemis program, aim to establish a sustainable human presence. These missions focus on scientific exploration, resource utilization, and preparing for deeper space exploration, including Mars. Landing safely and efficiently remains a key challenge.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold text-pink-400 mb-2">Lunar Habitats</h3>
+                    <p>
+                     Lunar habitats are structures designed for long-term human habitation on the Moon. These habitats need to provide life support, radiation protection, and psychological comfort in the harsh lunar environment. Technologies such as 3D printing with lunar regolith and inflatable habitats are being explored to ensure sustainability and safety for astronauts living on the Moon.   
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold text-pink-400 mb-2">Spacewalks</h3>
+                    <p>
+                     Spacewalks on the Moon allow astronauts to conduct scientific experiments, collect samples, and repair equipment on the lunar surface. They provide valuable experience in low gravity, testing tools and suits in extreme conditions. These missions are essential for understanding the challenges of living and working on the Moon for extended periods.   
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold text-pink-400 mb-2">Lunar Rover Tours</h3>
+                    <p>
+                    Lunar rover tours offer astronauts the ability to travel across the Moon's surface, exploring more areas beyond the landing site. These rovers will be equipped with scientific instruments, allowing for real-time data collection, sample gathering, and geological surveying. They enable astronauts to cover greater distances, enhancing our understanding of the Moon’s history.    
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold text-pink-400 mb-2">Lunar Science Experiments</h3>
+                    <p>
+                    Lunar science experiments focus on understanding the Moon's geology, history, and resources. Experiments aim to study the composition of lunar rocks, search for water ice in permanently shadowed craters, and understand the effects of long-term exposure to lunar dust. This research provides insights into the Moon’s potential for future human settlement.    
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 class="text-xl font-bold text-pink-400 mb-2">Night Sky Observation</h3>
+                    <p>
+                    From the Moon, the night sky offers a unique and stunning perspective. Observing celestial bodies from the lunar surface allows for clearer, unobstructed views of stars, planets, and deep-space phenomena. The absence of Earth’s atmosphere makes the Moon an ideal platform for astronomical research, potentially improving our understanding of the universe.    
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-center text-2xl font-semibold text-purple-500 mb-6">Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="../pages/lunar-landing.jpg" alt="Lunar landing" class="moon-image">
+                <img src="../pages/lunar-habitat.jpg" alt="Lunar habitat" class="moon-image">
+                <img src="../pages/moon-spacewalk.jpg" alt="Moon spacewalk" class="moon-image">
+                <img src="../pages/lunar-rover.jpg" alt="Lunar rover" class="moon-image">
+                <img src="../pages/lunar-science.jpg" alt="Lunar science experiments" class="moon-image">
+                <img src="../pages/night-sky.jpg" alt="Night sky observation" class="moon-image">
+            </div>
+        </section>        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
